@@ -1,0 +1,72 @@
+<!doctype html lang="ru">
+
+<html>
+<head>
+     <meta charset="utf-8">
+    <title>JQUERY Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="validation.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+</head>
+<body>
+    <form id="company-info" method="POST" action="/#">
+
+        <div class="col-1">
+
+      <label for="country">Country</label>
+      <select id="country">
+          <option class="country__name" name="russia">Russia</option>
+      </select>
+
+      <label for="region">Region</label>
+      <input id="region" class="region company-info__item" type="text" placeholder=""/>
+
+      <label for="city">City</label>
+      <input id="city" class="city company-info__item" type="text" placeholder=""/>
+
+      <label for="company-name-eng">Company Name (Eng)</label>
+      <input id="company-name-eng" class="company-eng company-info__item" type="text" placeholder=""/>
+
+      <label for="company-name-rus">Company Name (Rus)</label>
+      <input id="company-name-rus" class="company-rus company-info__item" type="text" placeholder=""/>
+
+      <label for="short-descr">Short Description</label>
+      <textarea id="short-descr" class="short-descr company-info__item" type="text" placeholder=""></textarea>
+
+      <label for="full-descr">Full Description</label>
+      <textarea id="full-descr" class="full-desr company-info__item" type="text" placeholder=""></textarea>
+
+    </div>
+
+      <div class="col-2">
+      
+        <label for="office-address">Office address</label>
+        <input id="office-address" class="office-address company-info__item" type="text" placeholder=""/>
+    
+        <label for="post-address">Post address</label>
+        <input id="post-address" class="post-address company-info__item" type="text" placeholder=""/>
+            
+        <label for="inn">INN</label>
+        <input id="inn" class="inn company-info__item" type="number" placeholder=""/>
+
+        <label for="phone">Phone Number</label>
+        <input id="phone" class="phone company-info__item" type="number" placeholder=""/>
+
+        <label for="fax">Fax</label>
+        <input id="fax" class="fax company-info__item" type="number" placeholder=""/>
+
+        
+        <label for="email">Emal</label>
+        <input id="email" class="fax company-info__item" type="email" placeholder=""/>
+
+        
+        <label for="website">Website</label>
+        <input id="website" class="website company-info__item" type="text" placeholder=""/>
+        <input id="submit" type="submit" value="Submit"></input>
+    </div>
+
+
+    </form>
+    
+</body>
+</html>
