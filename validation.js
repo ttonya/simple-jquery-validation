@@ -38,7 +38,7 @@ $("form").submit(function(event) {
     event.preventDefault();
 
   if (!$("#region").val()) {
-    $('#submit').after('<span class="error"> Остались незаполненными обязательные поля </span>');  
+    $('#region').after('<span class="error"> Поле не может быть пустым </span>');  
   }
 
   if(!$("#city").val()) {
